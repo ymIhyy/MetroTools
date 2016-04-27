@@ -10,6 +10,19 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
 import java.util.List;
+import org.jfugue.*;
+
+public class MyMusicApp
+{
+    public static void main(String[] args)
+    {
+        Player player = new Player();
+        Pattern pattern = new Pattern("C D E F G A B");
+        player.play(pattern);
+        System.exit(0); // If using Java 1.4 or lower
+    }
+}
+
 public class Main extends JFrame {
     public static Main game;
     public static void main(String[] args) throws InterruptedException {
@@ -20,7 +33,7 @@ public class Main extends JFrame {
 
         JFrame frame = new JFrame("Our Game");
         game = new Main();
-        game.Board = new Board();
+        // game.Board = new Board();
         frame.setSize(width, height);
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
