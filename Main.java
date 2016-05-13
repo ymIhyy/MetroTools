@@ -23,6 +23,8 @@ public class MyMusicApp
     }
 }
 
+// test
+
 public class Main extends JFrame {
     public static Main game;
     public static void main(String[] args) throws InterruptedException {
